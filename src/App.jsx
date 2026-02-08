@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-pink-100 via-red-50 to-rose-100 flex items-center justify-center overflow-hidden cursor-pointer"
+      className="fixed inset-0 bg-gradient-to-br from-pink-100 via-red-50 to-rose-100 flex items-center justify-center overflow-hidden cursor-pointer"
       onClick={createHeart}
     >
       {/* Floating Hearts on Click */}
@@ -40,7 +40,7 @@ function App() {
       ))}
 
       {/* Main Content */}
-      <div className="text-center z-10">
+      <div className="text-center z-10 px-4 md:px-8 max-w-4xl mx-auto">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -66,7 +66,7 @@ function App() {
         </motion.div>
 
         <motion.h2
-          className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-valentine-pink via-valentine-red to-valentine-rose bg-clip-text text-transparent mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-valentine-pink via-valentine-red to-valentine-rose bg-clip-text text-transparent mb-8 pb-4 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
@@ -75,7 +75,7 @@ function App() {
         </motion.h2>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-700"
+          className="text-lg sm:text-xl md:text-2xl text-gray-700"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
