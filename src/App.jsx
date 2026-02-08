@@ -40,7 +40,7 @@ function App() {
       ))}
 
       {/* Main Content */}
-      <div className="text-center z-10 px-4 md:px-8 max-w-4xl mx-auto">
+      <div className="text-center z-10 px-4 md:px-8 py-8 max-w-4xl mx-auto">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
